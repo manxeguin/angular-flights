@@ -1,0 +1,11 @@
+
+@import "../scss/main.scss";
+.app-cheap-flight{
+    .nav{
+        background-color: $ryanair-blue;
+        .nav-item.is-brand{
+            color: $ryanair-yellow;
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.flight-card{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    .flight-price{
+        text-align: center;
+        font-size: 26px;
+        padding: 10px;
+        color: #363636;
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        margin-top: 10px;
+    }
+
+    .flight-dates{
+        text-align: center;
+        font-size: 14px;
+        label.label-date-card{
+            display: block;
+            font-weight: bold;
+            color: #333333;
+            img.plane-image-out{
+                transform: rotate(-45deg);
+            }
+            img.plane-image-back{
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

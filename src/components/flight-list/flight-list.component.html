@@ -1,0 +1,37 @@
+<div class="columns is-multiline">
+    <div class="column is-4" ng-repeat="flight in $ctrl.flightList track by $index">
+        <div class="card flight-card fadein">
+
+            <div class="card-content">
+                <div class="content">
+                    <div class="flight-dates">
+                        
+                        <div class="fly-out">
+                            <label class="label-date-card">
+                            <!--<img class="plane-image-out" src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/transportation_plane-128.png" alt="plane, transportation icon" width="16" height="16">
+                                -->
+                                fly out:
+                            </label>
+                            {{::flight.dateFrom | date :'yyyy MMM dd h:mm:ss'}}
+                        </div>
+                        <div class="plane-image">
+                            <img src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/transportation_plane-128.png" alt="plane, transportation icon" width="60" height="70">
+                        </div>
+                        <div class="fly-back">
+                            <label class="label-date-card">
+                                <!--<img class="plane-image-back" src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/transportation_plane-128.png" alt="plane, transportation icon" width="16" height="16">
+                                -->
+                                fly back:
+                            </label>
+                            {{::flight.dateTo | date :'yyyy MMM dd h:mm:ss'}}
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        {{::flight.price | number:2}} {{flight.currency}}
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
