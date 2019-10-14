@@ -1,9 +1,0 @@
-<div class="autocomplete-input-box">
-    <input ng-keyup="$ctrl.keyUp($event)" class="input is-medium" type="text"  ng-model="$ctrl.airport.name" ng-change="$ctrl.changeText()" >
-    <div class="autocomplete-results" ng-if="$ctrl.airportsFiltered.length > 0">
-        <div ng-click="$ctrl.selectAirport(airport)" ng-repeat = "airport in $ctrl.airportsFiltered" class="autocomplete-row">
-            {{airport.name}} {{'('+ airport.iataCode +')' }}
-        </div>
-
-    </div>
-</div>
